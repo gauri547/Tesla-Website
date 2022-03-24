@@ -1,0 +1,138 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins, Arial, sans-serif ;
+	font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 header ul a{
+	font-weight: 500;
+}
+
+a{text-decoration: none;}
+ul{list-style-type: none;}
+
+header{
+	position: fixed;
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+	align-items: center;
+	padding: 0 3rem;
+}
+
+header ul{
+	display: flex;
+}
+
+header ul a{
+	color: black;
+	font-size: 90%;
+	padding: 0 1rem;
+}
+
+section{
+	background: url(Images/model-3.jpg) no-repeat scroll center / cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem 0;
+	justify-content: space-between;
+}
+
+section:nth-of-type(2){
+	background-image: url(Images/model-y.jpg);
+}
+
+
+section:nth-of-type(3){
+	background-image: url(Images/model-s.jpg);
+}
+
+section:nth-of-type(4){
+	background-image: url(Images/model-x.jpg);
+}
+
+section:nth-of-type(5){
+	background-image: url(Images/solar-panel.jpg);
+}
+
+section:nth-of-type(6){
+	background-image: url(Images/solar-roof.jpg);
+}
+
+section:nth-of-type(7){
+	background-image: url(Images/accessries.png);
+	background-size: 1000px 300px;
+}
+
+
+
+
+section .carName{
+	padding-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section .carName h1{
+	font-size: 2.5rem;
+}
+section .carName p{
+	font-size: 90%;
+}
+
+section .carName p a{
+	text-decoration: underline;
+	color: #000;
+}
+section .cta{
+	padding-top: 15.5rem;
+}
+
+section .cta a{
+	display: inline-block;
+	padding: 0.5rem 4rem;
+	border-radius: 25px;
+	background: #3a3c41;
+	color: #fff;
+	margin: 4rem 1rem;
+	opacity: 0.7;
+	font-size: 85%;
+	text-transform: uppercase;
+}
+
+section .cta a:last-of-type{
+	background: #fff;
+	color: #000;   
+}
+section:last-of-type .cta a{
+	background-color: #3a3c41;
+	color: #fff;
+}
+
+section .dancing{
+	animation: dance 1s ease-out infinite;
+    position: relative;
+    color: black;
+}
+section footer ul{
+	display: flex;
+}
+section footer ul a{
+	color: #4a4949;
+	font-size: 85%;
+	padding: 0 1rem;
+}
+@keyframes dance{
+	0%{top: 0;}
+	25%{top: 10%;}
+	50%{top: 0;}
+	75%{top: 10%;}
+	100%{top: 0;}
+}
